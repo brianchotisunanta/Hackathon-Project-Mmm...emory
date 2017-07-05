@@ -1,0 +1,41 @@
+<div class="title col-md-12 text-center">
+  <h1 class="title-home animated fadeInLeft">Forgetful or Amnesia?</h1>
+  <p class="title-sub animated fadeInRight">Need to remember something?</p>
+  <img class="image animated slideInUp"src="./images/Dont_Forget.jpg" alt="">
+</div>
+
+<div class="container">
+
+  <div class="textbox-section col-md-6 text-center">
+    <h3 class="textbox-title animated rollIn">Enter your notes here:</h3>
+
+    <div class="textbox col-md-12">
+      <!--<input class="form-control input-first-name" type="text" placeholder="First Name">
+      <input class="form-control input-last-name" type="text" placeholder="Last Name">-->
+      <input class="form-control textarea animated rollIn" type="text" placeholder="Type your NOTES in here" ng-model="notes">
+    </div>
+
+    <!-- Submit Button -->
+    <button class="btn btn-primary btn-lg pull-left submit-button animated flip" ng-click="submitButton(notes)">Submit</button>
+    <!-- Edit Button -->
+    <button class="btn btn-warning btn-lg pull-right edit-button" ng-click="editButton" ng-show="editButton">Edit</button>
+    <!-- Save Button -->
+    <button class="btn btn-success btn-lg pull-right save-button" ng-click="saveButton" ng-show="saveButton()">Save</button>
+  </div>
+
+  <div class="note-section col-md-6 pull-right">
+    <h3 class="note-section-title text-center animated bounceInRight">Your Notes:</h3>
+
+    <ul ng-repeat="key in note">
+      <li class="animated rollIn">
+        <p class="note-post-message"><Strong class="notes-label">Notes:</strong> " {{key.note}} "</p>
+        <p class"user-post-name-time"><Strong class"user-post-name-time"> {{key.postedBy}} </strong> {{ key.postedOn}} </p>
+        <!-- Delete Button -->
+        <button class="delete-post-button animated flip" ng-click="deleteButton(key.postId)">Delete </button>
+      </li>
+
+
+    </ul>
+
+  </div>
+  <!-- Container End -->

@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*font-family: 'Open Sans', sans-serif;*/
+  background-color: black;
+  /*background-color: #1DA1F2;*/
+  /*color: white;*/
+  font-family: 'Merienda One', cursive;
+}
+
+/*index.html*/
+
+.navbar {
+  background-color: black;
+  border: black;
+  border-bottom: solid;
+  padding-bottom: 10px;
+  /*color: #1DA1F2;*/
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+  margin-top: 19px;
+  padding-bottom: 0;
+  font-size: 20px;
+  color: #D9534F;
+}
+
+.footer {
+  color: white;
+  font-family: 'Merienda One', cursive;
+  border-top: solid;
+  margin-top: 37px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*TEXTBOX SECTION*/
+
+.title-home {
+  /*color: #00FF1C;*/
+  color: #5CB85C;
+}
+
+.textbox-title, .note-section-title {
+  /*color: #CC001E;*/
+  color: #D9534F;
+  font-family: 'Merienda One', cursive;
+}
+
+.input-first-name, .input-last-name {
+  margin: 10px;
+  background-color: #D9534F;
+  color: white;
+}
+
+.textarea {
+  height: 205px;
+  margin: 10px;
+  background-color: #D9534F;
+  color: white;
+  padding-bottom: 175px;
+}
+
+.save-button {
+  margin-left: 24px;
+}
+
+.edit-button {
+  margin-right: 10px;
+}
+
+.delete-button {
+  margin-right: 4px;
+}
+
+
+/*POST SECTION*/
+.note-section {
+  /*color: #FFFF00;*/
+  color: #F0AD4E;
+  font-family: 'Open Sans', sans-serif;
+}
+
+li {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}

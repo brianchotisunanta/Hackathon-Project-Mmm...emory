@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="noteApp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Take Notes</title>
+
+  <!-- Google Font - Open Sans -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+  <!-- Google Font - Merienda One -->
+  <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+
+  <!-- Bootstrap CDN 3.3.7 -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/animate.css">  
+
+  <!-- Angular CDN 1.5.7 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+
+  <!-- Angular UI Router CDN 0.4.2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+</head>
+
+<body ng-cloak>
+
+  <nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+      <li>
+        <a class="home-list animated rotateIn" ui-sref="home">Home</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav pull-right">
+      <li>
+        <a class="animated rotateIn" href="fake-email">Ron.Weasley@gmail.com</a>
+      </li>
+    </ul>
+    <div class="app-section-title">
+      <h1 class="app-title text-center animated zoomInUp">Mmm...emory</h1>
+    </div>
+
+  </nav>
+
+
+  <div ui-view></div>
+
+  <div class="footer text-center animated rotateIn">
+    Designed and Developed by Brian Chotisunanta and Roger Chavez
+  </div>
+  <!-- Module -->
+  <script type="text/javascript" src="./app.js"></script>
+
+  <!-- Controllers -->
+  <script type="text/javascript" src="./controllers/noteController.js"></script>
+</body>
+
+</html>
